@@ -44,7 +44,7 @@ Development:
 * `Alex Savio`_
 * `Borja Ayerdi`_
 * `Oier Etxaniz`_
-* `Bálint Petrás`_
+* `Balint Petras`_
 
 Jokes:
 
@@ -100,3 +100,4 @@ This project was founded at `PySS 2014`_ and is directed by the
 .. _contributing policy: https://github.com/pyjokes/pyjokes/tree/master/CONTRIBUTING.md
 .. _PySS 2014: http://www.pyss.org/
 .. _Pyjokes Society: http://pyjok.es/society/
+.. _Balint Petras: https://github.com/Petint
