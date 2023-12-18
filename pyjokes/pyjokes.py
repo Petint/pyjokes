@@ -9,6 +9,7 @@ from .jokes_it import jokes_it
 from .jokes_hu import jokes_hu
 from .jokes_ru import jokes_ru
 from .jokes_fr import jokes_fr
+from .jokes_pt import jokes_pt
 
 all_jokes = {
     'en': jokes_en,
@@ -19,7 +20,8 @@ all_jokes = {
     'it': jokes_it,
     'hu': jokes_hu,
     'ru': jokes_ru,
-    'fr': jokes_fr
+    'fr': jokes_fr,
+    'pt': jokes_pt
 }
 
 
@@ -31,44 +33,44 @@ class CategoryNotFoundError(Exception):
     pass
 
 
-def get_jokes(language='en', category='neutral'):
+def get_jokes(lang='en', category='neutral'):
     """
     Parameters
     ----------
     category: str
         Choices: 'neutral', 'chuck', 'all', 'twister'
     lang: str
-        Choices: 'en', 'de', 'es', 'gl', 'eu', 'it', 'hu', 'ru', 'fr'
+        Choices: 'en', 'de', 'es', 'gl', 'eu', 'it', 'hu', 'ru', 'fr', 'pt'
 
     Returns
     -------
     jokes: list
     """
 
-    if language not in all_jokes:
-        raise LanguageNotFoundError('No such language %s' % language)
+    if lang not in all_jokes:
+        raise LanguageNotFoundError('No such language %s' % lang)
 
-    jokes = all_jokes[language]
+    jokes = all_jokes[lang]
 
     if category not in jokes:
-        raise CategoryNotFoundError('No such category %s in language %s' % (category, language))
+        raise CategoryNotFoundError('No such category %s in language %s' % (category, lang))
 
     return jokes[category]
 
 
-def get_joke(language='en', category='neutral'):
+def get_joke(lang='en', category='neutral'):
     """
     Parameters
     ----------
     category: str
         Choices: 'neutral', 'chuck', 'all', 'twister'
     lang: str
-        Choices: 'en', 'de', 'es', 'gl', 'eu', 'it', 'hu', 'ru', 'fr'
+        Choices: 'en', 'de', 'es', 'gl', 'eu', 'it', 'hu', 'ru', 'fr', 'pt'
 
     Returns
     -------
     joke: str
     """
 
-    jokes = get_jokes(language, category)
+    jokes = get_jokes(lang, category)
     return random.choice(jokes)

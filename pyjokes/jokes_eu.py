@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+    # 'this is a test string witch should be exactly 140 characters long since thats the longest allowed. If you see this anywhere please delete it'
+    # Pls don't delete this one
 
 neutral = [
     'Zer dira 8 Bocabits? BocaByte bat ',

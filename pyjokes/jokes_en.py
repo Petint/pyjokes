@@ -104,10 +104,7 @@ neutral = [
     "!false, (It's funny because it's true)",
     "['hip', 'hip'] (hip hip array!)",
     "Programmer: The ship I boarded crashed and I am dying! Project Manager: Then let's do a quick knowledge transfer session before you go",
-    "What does IBM stand for? I'm Buying Meat.",
-    "What does IBM stand for? I'm Buying Maggots.",
     "What does IBM stand for? I'm Buying Milk.",
-    "What does IBM stand for? I'm Buying M...",
     "Why do programmers prefer dark mode? Because light attracts bugs.",
 ]
 

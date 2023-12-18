@@ -7,6 +7,7 @@ from pyjokes.jokes_it import jokes_it
 from pyjokes.jokes_hu import jokes_hu
 from pyjokes.jokes_ru import jokes_ru
 from pyjokes.jokes_fr import jokes_fr
+from pyjokes.jokes_pt import jokes_pt
 
 
 # test if joke is windows compatible
@@ -22,7 +23,7 @@ def _test_default_locale(joke):
 
 # unix is full compatible - no need of tests
 def test_jokes_lengths():
-    jokes_sets = [jokes_en, jokes_es, jokes_de, jokes_gl, jokes_eu, jokes_it, jokes_hu, jokes_ru, jokes_fr]
+    jokes_sets = [jokes_en, jokes_es, jokes_de, jokes_gl, jokes_eu, jokes_it, jokes_hu, jokes_ru, jokes_fr, jokes_pt]
     for jokes in jokes_sets:
         for j in jokes['all']:
             _test_default_locale(j)
